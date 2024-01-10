@@ -28,7 +28,7 @@ export default function RealTimeFlight() {
       return () => clearInterval(timer);
     }
     // eslint-disable-next-line
-  }, [latitude]);
+  }, [latitude, dispatch, id]);
   return (
     <div className={styles.container}>
       {flightCoordsData.length < 1 ? (
